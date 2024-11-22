@@ -1,32 +1,134 @@
-/* Diseño para pc */
-body{
-    background-image: url(../images/fondo.png); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: "Poiret One", sans-serif;
-}
-.lista-nav {
-    display: grid;
-    grid-template-columns: repeat(6, 5fr) 6fr;
-    grid-template-rows: 1fr;
-    background-color:black;
-    border-radius: 40px;
-    padding: 5px;
+    /* Reseteo */
+
+* {
     margin: 0;
-    font-size: 30px;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    /* Estilos Generales */
+
+  a:visited, a:link {
+    text-decoration: none;
+    color: green;
+  }
+
+    /* Estilos para el Navbar Mobile  */
+
+  .navbar-mobile div {
+    background-color: white;
+    padding: 0;
+  }
+
+  .boton-menu-hamburguesa {
+    padding: 10px;
+    margin-right: 15px;
+  }
+
+  h5 {
+    font-family: "Dancing Script", cursive;
+    color: coral;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+  .nav-link-mobile {
+    font-family: "Dancing Script", cursive;
+    padding-left: 10px;
+  }
+
+  .nav-link-mobile:hover{
+    color:coral;
+  }
+
+    /* Estilos para el Navbar Desktop  */
+
+  .navbar-desktop {
+    padding: 0;
+  }
+  .navbar-desktop form{
+    background-color: white;
+  }
+  .navbar-logo {
+      border-radius: 50%;
+      border:none;
+  }
+  .navbar-logo:hover {
+      background-color: white;
+      transform: scale(1.1);
+      cursor:auto;
+  }
+  .boton {
+    font-family: "Dancing Script", cursive;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 8px;
+  }
+
+  .boton:hover {
+    background-color: white;
+    transform: scale(1.1);
+  }
+
+ /* Media Query para desktop (pantallas grandes) */
+
+ @media (min-width: 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .navbar-desktop {
+        display: flex;
+    }
 }
-.item-nav {
-    text-align: center;
-    padding: 1px;
+
+
+/* Media Query para dispositivos móviles (pantallas pequeñas) */
+
+@media screen and (max-width: 767px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-mobile {
+        display: block;
+    }
 }
-.lista-nav li img {
-    width: 150px;
-    height: 150px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section-main {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -152,123 +254,3 @@ a {
     transform: scale(1.05);
 }
 
-/* Media Query */
-
-
-/* Tablet */
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .lista-nav {
-    background-color:red;
-    border-radius: 30px;
-    font-size: 25px; 
-}
-    .item-imagen {
-    border: 2px solid black;
-    
-}
-    section img {
-    width: 250px;
-    height: 250px;
-}
-    h1,h2,h3 {
-    font-size: 24px;
-}
-    p {
-    font-size: 18px;
-}
-    ul {
-    font-size: 18px;
-}
-    footer {
-    background-color: red;
-}
-.lista-footer {
-    font-size: 24px;
-}
-}
-
-
-/* Mobile */
-
-
-@media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        position: static;
-    }
-    .lista-nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4,1fr);
-        background-color: white;
-        font-size: 10px;
-        list-style: none;
-        border: 1px solid black;
-        border-radius: 10px;
-        margin: 2px;
-        padding: 0px;
-    }
-    a {
-        color: black;
-        font-weight: bold;
-    }
-    .item-nav {
-        display: inline-flex;
-        justify-content: center;
-        text-align: center;
-        padding: 1px;
-    }
-    #Logo {
-        grid-column: 1;
-        grid-row: 1/3;
-    }
-    .lista-nav li img {
-        width: 50px;
-        height: 50px;
-}
-    h1,h2,h3 {
-    font-size: 16px;
-}
-    p {
-    font-size: 12px;
-}
-    ul {
-    font-size: 12px;
-}
-    .item-imagen {
-    border: 1px solid black;
-}
-    section img {
-    width: 150px;
-    height: 150px;
-}
-    footer {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    background-color: white;
-    margin: 10px;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-    footer img {
-    width: 50px;
-    height: 50px;
-}
-    .lista-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0px;
-    padding: 10px; 
-    font-size: 10px;
-    color: red;
-}
-    .lista-footer li {
-    display: inline;
-}
-}
