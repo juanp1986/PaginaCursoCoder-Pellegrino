@@ -19,6 +19,16 @@
     color: #7D9F6A;
   }
 
+  h2 {
+    background-color: #F7F6F3;
+    margin-left: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #5C5C5C;
+    color: #5C5C5C;
+    border-radius: 15px 0 15px 0;
+  }
+
     /* Estilos para el Navbar Mobile  */
 
   .navbar-mobile div {
@@ -274,9 +284,10 @@
   list-style-type: none;
   padding: 5px;
   gap: 15px;
+
 }
 .galeria li {
-  border: 1px solid #ccc;
+  border: 1px solid #5C5C5C;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -290,8 +301,8 @@ figure {
 
 figcaption {
   padding: 5px;
-  background-color: #333;
-  color: white;
+  background-color: #F7F6F3;
+  color: #5C5C5C;
   text-align: center;
 }
 
