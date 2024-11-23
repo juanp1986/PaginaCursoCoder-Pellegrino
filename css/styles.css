@@ -8,11 +8,15 @@
 
     /* Estilos Generales */
 
+  body {
+    background-color: white;
+  }  
+
   a:visited, a:link {
     text-decoration: none;
     font-weight: bold;
     padding: 2px;
-    color: green;
+    color: #7D9F6A;
   }
 
     /* Estilos para el Navbar Mobile  */
@@ -48,9 +52,6 @@
   .navbar-desktop {
     padding: 0;  /* Para sacarle el padding que trae de Bootstrap */
   }
-  .navbar-desktop form{
-    background-color: white;
-  }
   .navbar-logo {
     border-radius: 50%;
   }
@@ -59,8 +60,7 @@
     transform: scale(1.1);
   }
   .boton {
-    font-family: "Dancing Script", cursive;
-    border: 1px solid green;
+    border: 1px solid #7D9F6A;
     border-radius: 5px;
     margin: 8px;
     padding: 5px;
@@ -97,7 +97,7 @@
     grid-template-rows: 4fr 1fr;
     width: 100%; 
     height: 200px; 
-    background-color: black;
+    background-color: #F7F6F3;
     border-radius: 8px;
     overflow: hidden; /* Para que el contenido no se salga de los bordes */
   }
@@ -127,7 +127,7 @@
 
   .descripcion-span {
     padding: 1px 5px;
-    color: #C3E5D4;
+    color: #8F8F8F;
     font-size: 12px;
 
   }
@@ -135,25 +135,32 @@
 
   .items-de-lista-principal {
     text-decoration: underline;
+    color: #7FB4B8;
   }
 
   .main-mobile h1 {
     font-size: 22px;
+    color: #B97FF5;
   }
   .main-mobile h2 {
+    color: #7FB4B8;
     font-size: 18px;
     text-decoration: underline;
   }
   .main-mobile h3 {
     font-size: 16px;
+    color: #F4A69A;
   }
+  
   .main-mobile p {
     font-size: 10px;
+    color: #7E7E7E;
   }
   .main-mobile ul {
     font-family: "Roboto Condensed", serif;
     font-size: 12px;
     text-align: left;
+    color: #7E7E7E;
   }
   .main-mobile h1,h2,h3{
     font-family: "Dancing Script", cursive;
@@ -176,50 +183,64 @@
       width: 100%;
       height: 100%;
       border-radius: 0; 
-      border: 2px solid black;
+      border: 2px solid #7E7E7E;
       border-right: none;
     }
 
     .descripcion {
       width: 100%;
       padding: 20px;
-      background-color: #C3E5D4;
-      border: 2px solid black;
+      background-color: #F7F6F3;
+      border: 2px solid  #8F8F8F;
     }
 
     .descripcion-span {
       padding: 10px 20px;
-      color: #A0A0A0;
+      color: #7FB4B8;
       background-color: white;
-      border: 2px solid #A0A0A0;
+      border: 2px solid #7FB4B8;
       border-radius: 0 15px;
       font-size: 16px;
     }
     
     .texto-descripcion {
       margin-top: 10px;
-      color:black;
       font-size: 14px;
     }
 
+    .main-desktop section div p {
+      color: #5C5C5C;
+    }
+
     .main-desktop h1 {
+      margin-top: 3px;
       font-size: 34px;
+      color: #B97FF5;
     }
 
     .main-desktop h2 {
+      color: #7FB4B8;
       font-size: 26px;
       text-decoration: underline;
+    }
+
+    .main-desktop h3{
+      color: #F4A69A;
     }
    
    .main-desktop ul {
      font-family: "Roboto Condensed", serif;
      font-size: 16px;
      text-align: left;
+     color: #7E7E7E;
     }
 
    .main-desktop h1,h2,h3 {
      font-family: "Dancing Script", cursive;
     }
+   .main-desktop p {
+     color: #7E7E7E;
+   }
   }
 
 
