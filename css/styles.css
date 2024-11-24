@@ -9,41 +9,41 @@
     /* Estilos Generales */
 
   body {
-    background-color: white;
+    background-color: #264653;
   }  
 
   a:visited, a:link {
     text-decoration: none;
     font-weight: bold;
     padding: 2px;
-    color: #7D9F6A;
+    color: #BDDCBD;
   }
 
   h2 {
-    background-color: #F7F6F3;
+    background-color: #13232A;
     margin-left: 10px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #5C5C5C;
-    color: #5C5C5C;
+    border: 1px solid #BDDCBD;
+    color: white;
     border-radius: 15px 0 15px 0;
   }
 
     /* Estilos para el Navbar Mobile  */
 
   .navbar-mobile div {
-    background-color: white;
-    
+    background-color: #13232A;
   }
 
   .boton-menu-hamburguesa {
+    background-color: #D1F2EB;
     padding: 10px;
     margin-right: 15px;
   }
 
   h5 {
     font-family: "Dancing Script", cursive;
-    color: coral;
+    color: #006F49;
     padding-left: 10px;
     padding-top: 5px;
   }
@@ -54,13 +54,14 @@
   }
 
   .nav-link-mobile:hover {
-    color:coral;
+    color:white;
   }
 
     /* Estilos para el Navbar Desktop  */
 
   .navbar-desktop {
-    padding: 0;  /* Para sacarle el padding que trae de Bootstrap */
+    padding: 5px; 
+    background-color: #13232A;
   }
   .navbar-logo {
     border-radius: 50%;
@@ -70,7 +71,7 @@
     transform: scale(1.1);
   }
   .boton {
-    border: 1px solid #7D9F6A;
+    border: 1px solid #BDDCBD;
     border-radius: 5px;
     margin: 8px;
     padding: 5px;
@@ -78,6 +79,7 @@
   
   .boton:hover {
       transform: scale(1.1);
+      background-color: #003C2F;
   }
 
     /* Estilos para el main Mobile */
@@ -107,7 +109,7 @@
     grid-template-rows: 4fr 1fr;
     width: 100%; 
     height: 200px; 
-    background-color: #F7F6F3;
+    background-color: #13232A;
     border-radius: 8px;
     overflow: hidden; /* Para que el contenido no se salga de los bordes */
   }
@@ -137,7 +139,7 @@
 
   .descripcion-span {
     padding: 1px 5px;
-    color: #8F8F8F;
+    color: white;
     font-size: 12px;
 
   }
@@ -145,35 +147,38 @@
 
   .items-de-lista-principal {
     text-decoration: underline;
-    color: #7FB4B8;
+    color: white;
   }
 
   .main-mobile h1 {
-    font-size: 22px;
-    color: #B97FF5;
+    font-size: 20px;
   }
+
   .main-mobile h2 {
-    color: #7FB4B8;
-    font-size: 18px;
-    text-decoration: underline;
+    font-size: 16px;
   }
+
   .main-mobile h3 {
     font-size: 16px;
-    color: #F4A69A;
+  }
+
+  .main-mobile h1, h2, h3 {
+    color: white;
+    font-family: "Dancing Script", cursive;
   }
   
   .main-mobile p {
     font-size: 10px;
-    color: #7E7E7E;
+    color: #A8E6CF;
+    margin: 2px 5%;
   }
   .main-mobile ul {
     font-family: "Roboto Condensed", serif;
+    margin-right: 5%;
     font-size: 12px;
     text-align: left;
-    color: #7E7E7E;
-  }
-  .main-mobile h1,h2,h3{
-    font-family: "Dancing Script", cursive;
+    list-style: none;
+    color: #A8E6CF;
   }
 
   /* Media query para el Main Desktop (pantallas grandes) */
@@ -187,13 +192,14 @@
       grid-template-columns: 2fr 3fr;
       grid-template-rows: 1fr;
       height: 300px;
+      border-radius: 0 15px 15px 0;
     }
 
     .imagen {
       width: 100%;
       height: 100%;
       border-radius: 0; 
-      border: 2px solid #7E7E7E;
+      border: 2px solid #F7F6F3;
       border-right: none;
     }
 
@@ -201,14 +207,14 @@
       width: 100%;
       padding: 20px;
       background-color: #F7F6F3;
-      border: 2px solid  #8F8F8F;
+      border: 2px solid  #F7F6F3;
     }
 
     .descripcion-span {
       padding: 10px 20px;
-      color: #7FB4B8;
-      background-color: white;
-      border: 2px solid #7FB4B8;
+      color: #F7F6F3;
+      background-color: #264653;
+      border: 2px solid #264653;
       border-radius: 0 15px;
       font-size: 16px;
     }
@@ -219,37 +225,38 @@
     }
 
     .main-desktop section div p {
-      color: #5C5C5C;
+      color: #264653;
     }
 
     .main-desktop h1 {
-      margin-top: 3px;
+      margin: 5px;
       font-size: 34px;
-      color: #B97FF5;
     }
 
     .main-desktop h2 {
-      color: #7FB4B8;
       font-size: 26px;
-      text-decoration: underline;
     }
 
     .main-desktop h3{
-      color: #F4A69A;
+      font-size: 24px;
+    }
+
+    .main-desktop h1,h2,h3 {
+      color: white;
+      font-family: "Dancing Script", cursive;
     }
    
    .main-desktop ul {
      font-family: "Roboto Condensed", serif;
      font-size: 16px;
      text-align: left;
-     color: #7E7E7E;
+     list-style: none;
+     color: #A8E6CF;
     }
 
-   .main-desktop h1,h2,h3 {
-     font-family: "Dancing Script", cursive;
-    }
    .main-desktop p {
-     color: #7E7E7E;
+     color: #A8E6CF;
+     margin: 3px 5%;
    }
   }
 
@@ -257,12 +264,12 @@
   /* Estilos para el Footer */
 
   .footer {
-    background-color: white;
+    background-color: #13232A;
     padding: 0;
     font-size: 10px;
   }
   .footer form {
-    background-color: white;
+    background-color: #13232A;
   }
 
   @media (min-width:768px){
@@ -287,7 +294,7 @@
 
 }
 .galeria li {
-  border: 1px solid #5C5C5C;
+  border: 1px solid white;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -301,8 +308,8 @@ figure {
 
 figcaption {
   padding: 5px;
-  background-color: #F7F6F3;
-  color: #5C5C5C;
+  background-color: #003C2F;
+  color: white;
   text-align: center;
 }
 
