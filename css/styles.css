@@ -19,8 +19,9 @@
     color: #BDDCBD;
   }
 
-  h2 {
+  .titulo-de-galerias {
     background-color: #13232A;
+    font-family: "Dancing Script", cursive;
     margin-left: 10px;
     margin: 10px;
     padding: 10px;
@@ -139,6 +140,7 @@
 
   .descripcion-span {
     padding: 1px 5px;
+    font-family: Lora, serif;
     color: white;
     font-size: 12px;
 
@@ -168,12 +170,13 @@
   }
   
   .main-mobile p {
-    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
     color: #A8E6CF;
     margin: 2px 5%;
   }
   .main-mobile ul {
-    font-family: "Roboto Condensed", serif;
+    font-family: 'Poppins', sans-serif;
     margin-right: 5%;
     font-size: 12px;
     text-align: left;
@@ -217,18 +220,16 @@
       background-color: #264653;
       border: 2px solid #264653;
       border-radius: 0 15px;
-      font-size: 16px;
+      font-family: Lora, serif;
+      font-size: 18px;
     }
     
-    .texto-descripcion {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
     .main-desktop section div p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
       margin: 3px;
       padding: 3px;
-      color: #264653;
+      color: #13232A;
     }
 
     .main-desktop h1 {
@@ -250,14 +251,16 @@
     }
    
    .main-desktop ul {
-     font-family: "Roboto Condensed", serif;
-     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 14px;
      text-align: left;
      list-style: none;
      color: #A8E6CF;
     }
 
    .main-desktop p {
+     font-family: 'Poppins', sans-serif;
+     font-size: 14px;
      color: #A8E6CF;
      margin: 3px 5%;
    }
