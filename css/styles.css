@@ -16,35 +16,40 @@
     text-decoration: none;
     font-weight: bold;
     padding: 2px;
-    color: #BDDCBD;
+    color: #edfaff;
   }
 
   .titulo-de-galerias {
-    background-color: #13232A;
-    font-family: "Dancing Script", cursive;
+    background: linear-gradient(to left,#264653,#264653,#3496bd);
+    font-family: "Roboto Condensed", serif;
     margin-left: 10px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #BDDCBD;
-    color: white;
+    border: 1px solid #3496bd;
+    color: #edfaff;
     border-radius: 15px 0 15px 0;
   }
 
     /* Estilos para el Navbar Mobile  */
+  
+  .navbar-mobile {
+    background-color: #13232A;
+  }
 
   .navbar-mobile div {
     background-color: #13232A;
   }
 
   .boton-menu-hamburguesa {
-    background-color: #D1F2EB;
+    background-color: #beedff;
+    border: 3px solid #3496bd;
     padding: 10px;
     margin-right: 15px;
   }
 
   h5 {
     font-family: "Dancing Script", cursive;
-    color: #006F49;
+    color: #a0e4ff;
     padding-left: 10px;
     padding-top: 5px;
   }
@@ -55,7 +60,7 @@
   }
 
   .nav-link-mobile:hover {
-    color:white;
+    color:#a0e4ff;
   }
 
     /* Estilos para el Navbar Desktop  */
@@ -68,19 +73,19 @@
     border-radius: 50%;
   }
   .navbar-logo:hover {
-    background-color: white;
+    background-color: #a0e4ff;
     transform: scale(1.1);
   }
   .boton {
-    border: 1px solid #BDDCBD;
+    background: linear-gradient(to right,#264653,#264653,#3496bd);
+    border: 1px solid #3496bd;
     border-radius: 15px 0;
     margin: 8px;
     padding: 5px;
   }
   
   .boton:hover {
-      transform: scale(1.1);
-      background-color: #003C2F;
+      transform: scale(1.1);  
   }
 
     /* Estilos para el main Mobile */
@@ -110,7 +115,8 @@
     grid-template-rows: 4fr 1fr;
     width: 100%; 
     height: 200px; 
-    background-color: #13232A;
+    background: linear-gradient(to right,#264653,#264653,#3496bd);
+    border: 1px solid #3496bd;
     border-radius: 8px;
     overflow: hidden; /* Para que el contenido no se salga de los bordes */
   }
@@ -154,6 +160,8 @@
 
   .main-mobile h1 {
     font-size: 20px;
+    margin: 4px;
+    padding: 4px;
   }
 
   .main-mobile h2 {
@@ -172,7 +180,7 @@
   .main-mobile p {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    color: #A8E6CF;
+    color: #beedff;
     margin: 2px 5%;
   }
   .main-mobile ul {
@@ -181,7 +189,7 @@
     font-size: 12px;
     text-align: left;
     list-style: none;
-    color: #A8E6CF;
+    color: #beedff;
   }
 
   /* Media query para el Main Desktop (pantallas grandes) */
@@ -195,30 +203,29 @@
       grid-template-columns: 2fr 3fr;
       grid-template-rows: 1fr;
       height: 300px;
-      border-radius: 0 15px 15px 0;
+      border-radius: 0 25px 0 0;
     }
 
     .imagen {
       width: 100%;
       height: 100%;
       border-radius: 0; 
-      border: 2px solid #F7F6F3;
+      border: 2px solid #edfaff;
       border-right: none;
     }
 
     .descripcion {
       width: 100%;
       padding: 20px;
-      background-color: #F7F6F3;
-      border: 2px solid  #F7F6F3;
+      background: linear-gradient(to bottom,#edfaff,#beedff,#a0e4ff);
+      border: 2px solid  #edfaff;
     }
 
     .descripcion-span {
       margin: 3px;
       padding: 10px 20px;
-      color: #F7F6F3;
-      background-color: #264653;
-      border: 2px solid #264653;
+      color: #edfaff;
+      background: linear-gradient(to right,#264653,#264653,#3496bd);
       border-radius: 0 15px;
       font-family: Lora, serif;
       font-size: 18px;
@@ -255,13 +262,13 @@
      font-size: 14px;
      text-align: left;
      list-style: none;
-     color: #A8E6CF;
+     color: #beedff;
     }
 
    .main-desktop p {
      font-family: 'Poppins', sans-serif;
      font-size: 14px;
-     color: #A8E6CF;
+     color: #beedff;
      margin: 3px 5%;
    }
   }
@@ -300,7 +307,7 @@
 
 }
 .galeria li {
-  border: 1px solid white;
+  border: 1px solid #3496bd;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -314,8 +321,10 @@ figure {
 
 figcaption {
   padding: 5px;
-  background-color: #003C2F;
-  color: white;
+  background: linear-gradient(to top,#3496bd,#264653);
+  color: #edfaff;
+  font-family: "Roboto Condensed", serif;
+  font-size: 18px;
   text-align: center;
 }
 
