@@ -47,6 +47,11 @@
     border-radius: 50%;
   }
 
+  .navbar-logo-mobile:active {
+    background: #3496bd;
+    border: 2px solid #92e0ff;
+  }
+
   .boton-menu-hamburguesa {
     background: linear-gradient(to top,#264653,#264653,#3496bd,#92e0ff);
     border: 3px solid #92e0ff;
@@ -58,7 +63,7 @@
     transform: translateY(2px);
     box-shadow: 8px 8px 8px rgba(124, 208, 231, 0.5);
   }
-
+  
   .cruz-navbar-mobile {
     background-color: white;
   }
@@ -93,12 +98,19 @@
   .navbar-logo {
     border-radius: 50%;
   }
+
   .navbar-logo:hover {
     background: linear-gradient(to top,#264653,#264653,#3496bd,#92e0ff);
     transform: scale(1.1);
     transform: translateY(-6px);
     box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.5);
   }
+
+  .navbar-logo:active {
+    background: #3496bd;
+    border: 2px solid #92e0ff;
+  }
+
   .boton {
     background: linear-gradient(to right,#264653,#264653,#3496bd);
     border: 1px solid #3496bd;
@@ -112,6 +124,12 @@
     background: linear-gradient(to top,#264653,#264653,#3496bd,#92e0ff);
     transform: rotate(357deg);
     box-shadow: 5px 5px 10px rgba(124, 208, 231, 0.5);
+  }
+  
+  .boton:active {
+    font-size: 130%;
+    background: #3496bd;
+    border: 2px solid #92e0ff;
   }
 
     /* Estilos para el main Mobile */
