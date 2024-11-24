@@ -127,7 +127,7 @@
   }
   
   .boton:active {
-    font-size: 130%;
+    font-size: 120%;
     background: #3496bd;
     border: 2px solid #92e0ff;
   }
