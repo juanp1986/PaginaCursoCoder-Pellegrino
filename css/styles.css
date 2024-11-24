@@ -72,7 +72,7 @@
   }
   .boton {
     border: 1px solid #BDDCBD;
-    border-radius: 5px;
+    border-radius: 15px 0;
     margin: 8px;
     padding: 5px;
   }
@@ -211,6 +211,7 @@
     }
 
     .descripcion-span {
+      margin: 3px;
       padding: 10px 20px;
       color: #F7F6F3;
       background-color: #264653;
@@ -225,6 +226,8 @@
     }
 
     .main-desktop section div p {
+      margin: 3px;
+      padding: 3px;
       color: #264653;
     }
 
