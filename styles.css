@@ -190,8 +190,8 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr 1fr;
-  width: 80%;
-  height: 200px;
+  width: 100%;
+  height: 350px;
   background: linear-gradient(to right, #264653, #264653, #3496bd);
   border-radius: 8px;
   overflow: hidden;
@@ -226,7 +226,7 @@ figcaption {
   padding: 1px 5px;
   font-family: Lora, serif;
   color: white;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .items-de-lista-principal {
@@ -235,13 +235,14 @@ figcaption {
 }
 
 .main-mobile h1 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 4px;
   padding: 4px;
 }
 
 .main-mobile h2, .main-mobile h3 {
-  font-size: 16px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .main-mobile h1, h2, h3 {
@@ -268,80 +269,96 @@ figcaption {
 /* Media query para el Main Desktop (pantallas grandes) */
 @media (min-width: 768px) {
   /* Ahora es una grilla con 5 columnas: 2 para la imagen y 3 para la descripcion (Horizontal) */
-  .item {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr;
-    width: 95%;
-    height: 300px;
-    border-radius: 0 25px 0 0;
-  }
-  .imagen-desktop {
-    grid-column: 1/2;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    border: 2px solid #edfaff;
-    border-right: none;
-    overflow: hidden;
-  }
-  .fondo-img-desktop {
-    width: 100%;
-    height: 100%;
-  }
-  .descripcion-desktop {
-    align-content: center;
-    grid-column: 2/3;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to bottom, #edfaff, #beedff, #a0e4ff);
-    border: 2px solid #edfaff;
-  }
-  .descripcion-h4-desktop {
-    margin: 5px;
-    padding: 10px 20px;
-    color: #edfaff;
-    background: linear-gradient(to right, #264653, #264653, #3496bd);
-    border-radius: 0 15px;
-    font-family: Lora, serif;
-    font-size: 18px;
-  }
-  .main-desktop section div p {
-    text-align: left;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    margin: 5px;
-    padding: 15px;
-    color: #13232A;
-  }
-  .main-desktop h1 {
-    margin: 5px;
-    font-size: 34px;
-  }
-  .main-desktop h2 {
-    font-size: 24px;
-  }
-  .main-desktop h3 {
-    font-size: 24px;
-  }
-  .main-desktop h1, h2, h3 {
-    color: white;
-    font-family: "Dancing Script", cursive;
-  }
-  .main-desktop ul {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    text-align: left;
-    list-style: none;
-    color: #beedff;
-  }
-  .main-desktop p {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    color: #beedff;
-    margin: 3px 5%;
-  }
 }
+.item-desktop {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  width: 95%;
+  height: 300px;
+  border-radius: 0 25px 0 0;
+}
+
+.imagen-desktop {
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: 2px solid #edfaff;
+  border-right: none;
+  overflow: hidden;
+}
+
+.fondo-img-desktop {
+  width: 100%;
+  height: 100%;
+}
+
+.descripcion-desktop {
+  align-content: center;
+  grid-column: 2/3;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom, #edfaff, #beedff, #a0e4ff);
+  border: 2px solid #edfaff;
+  border-radius: 0 25px 0 0;
+}
+
+.descripcion-h4-desktop {
+  margin: 5px;
+  padding: 10px 20px;
+  color: #edfaff;
+  background: linear-gradient(to right, #264653, #264653, #3496bd);
+  border-radius: 0 15px;
+  font-family: Lora, serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-desktop section div p {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  padding: 15px;
+  color: #13232A;
+}
+
+.main-desktop h1 {
+  margin: 5px;
+  font-size: 34px;
+}
+
+.main-desktop h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-desktop h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-desktop h1, h2, h3 {
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+.main-desktop ul {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  color: #beedff;
+}
+
+.main-desktop p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #beedff;
+  margin: 3px 5%;
+}
+
 .footer {
   background-color: #13232A;
   position: static;
@@ -370,6 +387,9 @@ figcaption {
   a:visited, a:link {
     font-size: 10px;
   }
+  .item {
+    width: 90%;
+  }
 }
 /* a partir de 768px la grilla tiene 4 columnas  */
 @media (min-width: 768px) {
@@ -391,7 +411,7 @@ figcaption {
     display: none;
   }
   .main-desktop {
-    display: flex;
+    display: grid;
   }
   .footer {
     font-size: 16px;
@@ -422,9 +442,9 @@ figcaption {
     margin: 1px;
   }
 }
-@media (min-width: 500px) and (max-width: 767px) {
+@media (max-width: 435px) {
   .item {
-    width: 50%;
+    height: 300px;
   }
 }
 /* Reseteo */

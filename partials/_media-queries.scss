@@ -1,4 +1,6 @@
- /* Media Query para las galerias */
+
+
+  /* Media Query para las galerias */
 
     /* a partir de 550px y hasta 767px la grilla tiene dos columnas */
 
@@ -16,6 +18,9 @@
         }
         a:visited, a:link {
             font-size: 10px;
+        }
+        .item {
+          width: 90%;
         }
       }
       
@@ -47,7 +52,7 @@
       }
   
            .main-desktop {
-               display: flex;
+               display: grid;
       }
            .footer {
                font-size: 16px;
@@ -89,11 +94,11 @@
       }  
 }
 
-// para la imagen del main mobile
+// para las imagenes del main mobile
 
-      @media (min-width: 500px) and (max-width:767px) {
-
-        .item {
-          width: 50%;  
-      }
+@media (max-width:435px){
+  .item {
+    height: 300px;
   }
+}
+
