@@ -1,0 +1,80 @@
+ /* Media query para el Main Desktop (pantallas grandes) */
+  
+ @media (min-width: 768px) {
+  
+    /* Ahora es una grilla con 5 columnas: 2 para la imagen y 3 para la descripcion (Horizontal) */
+
+.item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    height: 300px;
+    border-radius: 0 25px 0 0;  
+}
+.imagen-desktop {
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    border-radius: 0; 
+    border: 2px solid $color1;
+    border-right: none;
+    overflow: hidden;
+}
+.fondo-img-desktop {
+    width: 100%;
+    height: 100%;
+}
+.descripcion-desktop {
+    align-content: center;
+    grid-column: 2/3;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom,#edfaff,#beedff,#a0e4ff);
+    border: 2px solid  $color1;
+}
+.descripcion-h4-desktop {  
+    margin: 5px;
+    padding: 10px 20px;
+    color: $color1;
+    background: linear-gradient(to right,#264653,#264653,#3496bd);
+    border-radius: 0 15px; 
+    font-family: Lora, serif;
+    font-size: 18px;
+}
+.main-desktop section div p {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    padding: 15px;
+    color: $color7;
+}
+.main-desktop h1 {
+    margin: 5px;
+    font-size: 34px;
+}
+.main-desktop h2 {
+    font-size: 24px;
+}
+.main-desktop h3{
+    font-size: 24px;
+}
+.main-desktop h1,h2,h3 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+.main-desktop ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    list-style: none;
+    color: #beedff;
+}
+.main-desktop p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #beedff;
+    margin: 3px 5%;
+}
+}

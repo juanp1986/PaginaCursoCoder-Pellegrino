@@ -1,3 +1,536 @@
+@charset "UTF-8";
+.border, .nav-link-mobile:hover, .boton-menu-hamburguesa, .navbar-logo-mobile:active, .boton:active, .navbar-logo:active {
+  border: 1px solid #92e0ff;
+}
 
+.border2, .titulo-de-galerias, .item, .galeria li, .boton {
+  border: 1px solid #3496bd;
+}
+
+.navbar-desktop {
+  padding: 5px;
+  background-color: #13232A;
+}
+
+.navbar-logo {
+  border-radius: 50%;
+  animation: myanimation 2.2s linear;
+}
+
+@keyframes myanimation {
+  0% {
+    rotate: 360deg;
+  }
+  0% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+  0%, 100% {
+    background: linear-gradient(to bottom, #264653, #264653, #3496bd, #92e0ff);
+  }
+  0%, 100% {
+    box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.5);
+  }
+}
+.navbar-logo:hover {
+  background: linear-gradient(to bottom, #92e0ff, #3496bd);
+  transform: rotate(-4deg);
+  box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.2);
+}
+
+.navbar-logo:active {
+  background: #3496bd;
+}
+
+.ul-navbar {
+  list-style-type: none;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #264653, #3496bd);
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 3px;
+  transition: transform 0.2s ease;
+  color: #edfaff;
+  text-align: center;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to top, #264653, #264653, #3496bd, #92e0ff);
+  transform: translateY(4px);
+  border: 1px solid #edfaff;
+  text-decoration: underline;
+}
+
+.boton:active {
+  background: #3496bd;
+}
+
+.navbar-mobile, .navbar-mobile div {
+  background-color: #13232A;
+}
+
+.navbar-logo-mobile:hover {
+  background: linear-gradient(to top, #264653, #3496bd, #92e0ff);
+  transform: translateY(6px);
+  box-shadow: 4px 4px 15px rgba(124, 208, 231, 0.5);
+  border-radius: 50%;
+}
+
+.navbar-logo-mobile:active {
+  background: #3496bd;
+}
+
+.boton-menu-hamburguesa {
+  background: linear-gradient(to top, #264653, #264653, #3496bd, #92e0ff);
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.boton-menu-hamburguesa:hover {
+  transform: translateY(2px);
+  box-shadow: 8px 8px 8px rgba(124, 208, 231, 0.5);
+}
+
+.cruz-navbar-mobile {
+  background-color: white;
+}
+
+h5 {
+  font-family: "Dancing Script", cursive;
+  color: #a0e4ff;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.nav-link-mobile {
+  font-family: "Dancing Script", cursive;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.nav-link-mobile:hover {
+  color: #92e0ff;
+  background: linear-gradient(to right, #264653, #3496bd, #92e0ff);
+  box-shadow: 4px 4px 12px rgba(124, 208, 231, 0.5);
+  transform: translatey(-2px);
+}
+
+.galeria {
+  margin: 0;
+  padding: 0;
+}
+
+.galeria ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  padding: 5px;
+  gap: 15px;
+}
+
+.galeria li {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.galeria li:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px rgba(124, 208, 231, 0.7);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  padding: 5px;
+  background: linear-gradient(to top, #3496bd, #264653);
+  color: #edfaff;
+  font-family: "Roboto Condensed", serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.galeria ul li figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titulo-principal {
+  display: inline;
+  text-align: center;
+}
+
+/* Una grilla con 5 filas, una para cada item */
+.grilla {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Estilos de cada fila */
+/* Una grilla con 5 filas: 4 para la imagen y 1 para la descipcion (Vertical)*/
+.item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  width: 80%;
+  height: 200px;
+  background: linear-gradient(to right, #264653, #264653, #3496bd);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imagen {
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fondo-img {
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+
+.descripcion {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.descripcion-h4 {
+  grid-row: 2/3;
+  padding: 1px 5px;
+  font-family: Lora, serif;
+  color: white;
+  font-size: 11px;
+}
+
+.items-de-lista-principal {
+  text-decoration: underline;
+  color: white;
+}
+
+.main-mobile h1 {
+  font-size: 18px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.main-mobile h2, .main-mobile h3 {
+  font-size: 16px;
+}
+
+.main-mobile h1, h2, h3 {
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+.main-mobile p {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: #beedff;
+  margin: 2px 5%;
+}
+
+.main-mobile ul {
+  font-family: "Poppins", sans-serif;
+  margin-right: 5%;
+  font-size: 10px;
+  text-align: left;
+  list-style: none;
+  color: #beedff;
+}
+
+/* Media query para el Main Desktop (pantallas grandes) */
+@media (min-width: 768px) {
+  /* Ahora es una grilla con 5 columnas: 2 para la imagen y 3 para la descripcion (Horizontal) */
+  .item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    height: 300px;
+    border-radius: 0 25px 0 0;
+  }
+  .imagen-desktop {
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 2px solid #edfaff;
+    border-right: none;
+    overflow: hidden;
+  }
+  .fondo-img-desktop {
+    width: 100%;
+    height: 100%;
+  }
+  .descripcion-desktop {
+    align-content: center;
+    grid-column: 2/3;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, #edfaff, #beedff, #a0e4ff);
+    border: 2px solid #edfaff;
+  }
+  .descripcion-h4-desktop {
+    margin: 5px;
+    padding: 10px 20px;
+    color: #edfaff;
+    background: linear-gradient(to right, #264653, #264653, #3496bd);
+    border-radius: 0 15px;
+    font-family: Lora, serif;
+    font-size: 18px;
+  }
+  .main-desktop section div p {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    padding: 15px;
+    color: #13232A;
+  }
+  .main-desktop h1 {
+    margin: 5px;
+    font-size: 34px;
+  }
+  .main-desktop h2 {
+    font-size: 24px;
+  }
+  .main-desktop h3 {
+    font-size: 24px;
+  }
+  .main-desktop h1, h2, h3 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+  }
+  .main-desktop ul {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-align: left;
+    list-style: none;
+    color: #beedff;
+  }
+  .main-desktop p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #beedff;
+    margin: 3px 5%;
+  }
+}
+.footer {
+  background-color: #13232A;
+  position: static;
+  padding: 0;
+  font-size: 10px;
+}
+
+.footer ul {
+  background-color: #13232A;
+}
+
+/* Media Query para las galerias */
+/* a partir de 550px y hasta 767px la grilla tiene dos columnas */
+@media (min-width: 550px) and (max-width: 767px) {
+  .galeria ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    margin: 2px;
+  }
+  a:visited, a:link {
+    font-size: 10px;
+  }
+}
+/* a partir de 768px la grilla tiene 4 columnas  */
+@media (min-width: 768px) {
+  .galeria ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Media Query para Desktop (pantallas grandes) */
+/* Despues de los 767px el display solo muestra el navbar y el main para Desktop */
+@media (min-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar-desktop {
+    display: flex;
+  }
+  .main-mobile {
+    display: none;
+  }
+  .main-desktop {
+    display: flex;
+  }
+  .footer {
+    font-size: 16px;
+  }
+}
+/* Media Query para dispositivos móviles (pantallas pequeñas) */
+/* Hasta los 767px el Display solo muestra el Navbar y el Main para Mobile */
+@media (max-width: 767px) {
+  .navbar-mobile {
+    display: block;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .main-mobile {
+    display: block;
+  }
+  .main-desktop {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    margin: 1px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .item {
+    width: 50%;
+  }
+}
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+  background-color: #264653;
+}
+
+a:visited, a:link {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #edfaff;
+}
+
+.titulo-de-galerias {
+  grid-column: 1/5;
+  background: linear-gradient(to left, #264653, #264653, #3496bd);
+  font-family: "Roboto Condensed", serif;
+  margin: 10px;
+  padding: 10px;
+  color: #edfaff;
+  border-radius: 15px 0 15px 0;
+}
+
+.header-galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: nowrap;
+}
+
+.fin-de-header {
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5/6;
+  border: 1px solid #3496bd;
+  border-radius: 0 15px;
+}
+
+.boton2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: radial-gradient(#a0e4ff, #92e0ff, #3496bd);
+  border: 1px solid #3496bd;
+  color: #264653;
+  border-radius: 50%;
+  margin: 8px;
+  padding: 5px;
+  min-height: 40px;
+  min-width: 40px;
+  animation: myanimation2 2.2s infinite;
+}
+
+@keyframes myanimation2 {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  90% {
+    transform: rotate(340deg);
+  }
+}
+.animate__animated.animate__rubberBand {
+  --animate-duration: 2s;
+}
+
+.btn-color {
+  background: linear-gradient(to right, #3496bd, #264653);
+  border: 1px solid #3496bd;
+  color: #edfaff;
+}
+
+.btn-color:hover {
+  border: 1px solid #edfaff;
+  color: #edfaff;
+}
+
+.modal-1 {
+  background: linear-gradient(to right, #edfaff, #beedff);
+  color: #3496bd;
+  font-size: bold;
+}
+
+.modal-2 {
+  background: linear-gradient(to right, #edfaff, #beedff, #a0e4ff);
+  color: #3496bd;
+  font-size: bold;
+}
+
+.modal-3 {
+  background: linear-gradient(to right, #edfaff, #beedff, #a0e4ff);
+}
 
 /*# sourceMappingURL=styles.css.map */

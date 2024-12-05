@@ -1,0 +1,59 @@
+.navbar-desktop {
+    padding: 5px; 
+    background-color: #13232A;
+}
+.navbar-logo {
+    border-radius: $radius-circulo;
+    animation: myanimation 2.2s linear;
+}
+
+@keyframes myanimation {
+    0%{ rotate: 360deg;}
+    0%{ transform: scale(0.4);}
+    100%{ transform: scale(1.2);}
+    0%,100%{ background: linear-gradient(to bottom,#264653,#264653,#3496bd,#92e0ff);}
+    0%,100%{ box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.5);}
+  }
+    
+.navbar-logo:hover {
+    background: linear-gradient(to bottom,#92e0ff,#3496bd);
+    transform: rotate(-4deg);
+    box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.2);
+}
+    
+.navbar-logo:active {
+    background: #3496bd;
+    @extend .border;
+}
+      
+.ul-navbar {
+    list-style-type: none;
+}
+    
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#264653,#3496bd);
+    width:100px;
+    height: 35px;
+    @extend .border2;
+    border-radius: 5px;
+    margin: 3px;
+    transition: transform 0.2s ease;
+    color: #edfaff;
+    text-align: center;
+}
+      
+.boton:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to top,#264653,#264653,#3496bd,#92e0ff);
+    transform:translateY(4px);
+    border:1px solid #edfaff;
+    text-decoration: underline;
+}
+      
+.boton:active {
+    background: #3496bd;
+    @extend .border;
+}

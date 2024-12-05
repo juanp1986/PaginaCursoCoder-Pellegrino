@@ -1,0 +1,38 @@
+.galeria {
+    margin: 0;
+    padding: 0;
+}
+.galeria ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    padding: 5px;
+    gap: 15px;
+}
+.galeria li {
+    @extend .border2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.galeria li:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(124, 208, 231, 0.7);
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+      
+figcaption {
+    padding: 5px;
+    background: linear-gradient(to top,#3496bd,#264653);
+    color: #edfaff;
+    font-family: "Roboto Condensed", serif;
+    font-size: 18px;
+    text-align: center;
+}
+.galeria ul li figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,89 @@
+.titulo-principal {
+    display: inline;
+    text-align: center;
+}
+                 /* Una grilla con 5 filas, una para cada item */
+.grilla {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+    height: auto;
+    width: 100%; 
+    padding: 20px;
+}
+                 /* Estilos de cada fila */ 
+                 /* Una grilla con 5 filas: 4 para la imagen y 1 para la descipcion (Vertical)*/
+.item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    width: 80%; 
+    height: 200px; 
+    background: linear-gradient(to right,#264653,#264653,#3496bd);
+    @extend .border2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.imagen {
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.fondo-img {
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+}
+.descripcion {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+
+}
+.descripcion-h4 {
+    grid-row: 2/3;
+    padding: 1px 5px;
+    font-family: Lora, serif;
+    color: $color0;
+    font-size: 11px;
+}
+.items-de-lista-principal {
+    text-decoration: underline;
+    color: $color0;
+}
+.main-mobile h1 {
+    font-size: 18px;
+    margin: 4px;
+    padding: 4px;
+}
+.main-mobile h2, .main-mobile h3 {
+    font-size: 16px;
+}
+
+.main-mobile h1, h2, h3 {
+    color: $color0;
+    font-family: "Dancing Script", cursive;
+}
+  
+.main-mobile p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: $color2;
+    margin: 2px 5%;
+}
+.main-mobile ul {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 5%;
+    font-size: 10px;
+    text-align: left;
+    list-style: none;
+    color: $color2;
+}
