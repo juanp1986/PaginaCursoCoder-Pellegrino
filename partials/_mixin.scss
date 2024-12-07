@@ -1,0 +1,8 @@
+@mixin gradiente ($direccion, $col1, $col2, $col3){
+    background: linear-gradient($direccion, $col1, $col2, $col3);
+}
+
+@mixin fuente ($fuente, $size){
+    font-family: $fuente;
+    font-size: $size;
+}

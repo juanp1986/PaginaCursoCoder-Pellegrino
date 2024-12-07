@@ -1,20 +1,22 @@
+@import "./mixin";
+
 .navbar-desktop {
     padding: 5px; 
-    background: linear-gradient(to top,$color7,$color7,$color5);
+    @include gradiente(to top,$color7,$color7,$color5);
 }
 .navbar-logo {
     border-radius: $radius-circulo;
-    animation: myanimation 2.2s linear;
+    animation: myanimation 2s linear;
 }
     
 .navbar-logo:hover {
-    background: linear-gradient(to bottom,#92e0ff,#3496bd);
+    @include gradiente(to top,$color7,$color5,$color3);
     transform: rotate(-4deg);
     box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.2);
 }
     
 .navbar-logo:active {
-    background: #3496bd;
+    background: $color5;
     @extend .border;
 }
       
@@ -26,26 +28,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom,#264653,#3496bd);
+    @include gradiente(to bottom,$color6,$color5,$color4);
     width:100px;
     height: 35px;
     @extend .border2;
     border-radius: 5px;
     margin: 3px;
-    transition: transform 0.2s ease;
-    color: #edfaff;
+    transition: transform 0.1s ease;
+    color: $color1;
     text-align: center;
 }
       
 .boton:hover {
-    transform: scale(1.1);
-    background: linear-gradient(to top,#264653,#264653,#3496bd,#92e0ff);
+    @include gradiente(to top,$color7,$color6,$color5);
     transform:translateY(4px);
     border:1px solid #edfaff;
     text-decoration: underline;
 }
-      
+
 .boton:active {
-    background: #3496bd;
+    background: $color5;
     @extend .border;
 }

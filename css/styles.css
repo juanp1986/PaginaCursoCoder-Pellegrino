@@ -7,6 +7,11 @@
   border: 1px solid #3496bd;
 }
 
+.img-full, .fondo-img-desktop, .imagen-desktop, .fondo-img, .imagen {
+  width: 100%;
+  height: 100%;
+}
+
 .navbar-desktop {
   padding: 5px;
   background: linear-gradient(to top, #13232A, #13232A, #3496bd);
@@ -14,11 +19,11 @@
 
 .navbar-logo {
   border-radius: 50%;
-  animation: myanimation 2.2s linear;
+  animation: myanimation 2s linear;
 }
 
 .navbar-logo:hover {
-  background: linear-gradient(to bottom, #92e0ff, #3496bd);
+  background: linear-gradient(to top, #13232A, #3496bd, #a0e4ff);
   transform: rotate(-4deg);
   box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.2);
 }
@@ -35,19 +40,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #264653, #3496bd);
+  background: linear-gradient(to bottom, #264653, #3496bd, #92e0ff);
   width: 100px;
   height: 35px;
   border-radius: 5px;
   margin: 3px;
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   color: #edfaff;
   text-align: center;
 }
 
 .boton:hover {
-  transform: scale(1.1);
-  background: linear-gradient(to top, #264653, #264653, #3496bd, #92e0ff);
+  background: linear-gradient(to top, #13232A, #264653, #3496bd);
   transform: translateY(4px);
   border: 1px solid #edfaff;
   text-decoration: underline;
@@ -58,22 +62,18 @@
 }
 
 .navbar-mobile, .navbar-mobile div {
-  background: linear-gradient(to top, #13232A, #13232A, #3496bd);
+  background: linear-gradient(to top, #13232A, #264653, #3496bd);
 }
 
 .navbar-logo-mobile:hover {
-  background: linear-gradient(to top, #264653, #3496bd, #92e0ff);
+  background: linear-gradient(to top, #13232A, #3496bd, #a0e4ff);
   transform: translateY(6px);
   box-shadow: 4px 4px 15px rgba(124, 208, 231, 0.5);
   border-radius: 50%;
 }
 
-.navbar-logo-mobile:active {
-  background: #3496bd;
-}
-
 .boton-menu-hamburguesa {
-  background: linear-gradient(to top, #264653, #3496bd, #92e0ff);
+  background: linear-gradient(to top, #a0e4ff, #3496bd, #13232A);
   padding: 10px;
   margin-right: 15px;
 }
@@ -88,21 +88,21 @@
 }
 
 h5 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
+  font-size: 24px;
   color: #a0e4ff;
   padding-left: 10px;
   padding-top: 5px;
 }
 
 .nav-link-mobile {
-  font-family: "Dancing Script", cursive;
   padding-left: 10px;
   border-radius: 10px;
 }
 
 .nav-link-mobile:hover {
   color: #92e0ff;
-  background: linear-gradient(to right, #264653, #3496bd, #92e0ff);
+  background: linear-gradient(to right, #13232A, #3496bd, #a0e4ff);
   box-shadow: 4px 4px 12px rgba(124, 208, 231, 0.5);
   transform: translatey(-2px);
 }
@@ -137,10 +137,10 @@ figure {
 
 figcaption {
   padding: 5px;
-  background: linear-gradient(to top, #3496bd, #264653);
+  background: linear-gradient(to top, #3496bd, #3496bd, #264653);
   color: #edfaff;
-  font-family: "Roboto Condensed", serif;
-  font-size: 18px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -152,8 +152,9 @@ figcaption {
 
 .titulo-de-galerias {
   grid-column: 1/5;
-  background: linear-gradient(to right, #264653, #264653, #3496bd);
-  font-family: "Roboto Condensed", serif;
+  background: linear-gradient(to right, #13232A, #264653, #3496bd);
+  font-family: Roboto Condensed;
+  font-size: 22px;
   margin: 10px;
   padding: 10px;
   color: #edfaff;
@@ -173,12 +174,13 @@ figcaption {
   justify-content: center;
   align-items: center;
   grid-column: 5/6;
+  background: linear-gradient(to left, #13232A, #264653, #3496bd);
   border: 1px solid #3496bd;
   border-radius: 0 15px;
 }
 
 .boton2 {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 18px;
   font-weight: bold;
   background: radial-gradient(#a0e4ff, #92e0ff, #3496bd);
@@ -193,7 +195,7 @@ figcaption {
 }
 
 .btn-color {
-  background: linear-gradient(to right, #3496bd, #264653);
+  background: linear-gradient(to right, #3496bd, #264653, #264653);
   border: 1px solid #3496bd;
   color: #edfaff;
 }
@@ -204,7 +206,7 @@ figcaption {
 }
 
 .modal-1 {
-  background: linear-gradient(to right, #edfaff, #beedff);
+  background: linear-gradient(to right, #edfaff, #beedff, #beedff);
   color: #3496bd;
   font-size: bold;
 }
@@ -244,23 +246,19 @@ figcaption {
   grid-template-rows: 4fr 1fr;
   width: 100%;
   height: 350px;
-  background: linear-gradient(to right, #264653, #264653, #3496bd);
+  background: linear-gradient(to right, #13232A, #264653, #3496bd);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .imagen {
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .fondo-img {
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
 }
 
 .descripcion {
@@ -276,9 +274,9 @@ figcaption {
 .descripcion-h4 {
   grid-row: 2/3;
   padding: 1px 5px;
-  font-family: Lora, serif;
-  color: white;
+  font-family: Lora;
   font-size: 14px;
+  color: white;
 }
 
 .items-de-lista-principal {
@@ -303,16 +301,16 @@ figcaption {
 }
 
 .main-mobile p {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 10px;
   color: #beedff;
   margin: 2px 5%;
 }
 
 .main-mobile ul {
-  font-family: "Poppins", sans-serif;
-  margin-right: 5%;
+  font-family: Poppins;
   font-size: 10px;
+  margin-right: 5%;
   text-align: left;
   list-style: none;
   color: #beedff;
@@ -327,23 +325,16 @@ figcaption {
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr;
   width: 95%;
-  height: 300px;
+  height: 350px;
   border-radius: 0 25px 0 0;
 }
 
 .imagen-desktop {
   grid-column: 1/2;
-  width: 100%;
-  height: 100%;
   border-radius: 0;
   border: 2px solid #edfaff;
   border-right: none;
   overflow: hidden;
-}
-
-.fondo-img-desktop {
-  width: 100%;
-  height: 100%;
 }
 
 .descripcion-desktop {
@@ -362,14 +353,14 @@ figcaption {
   color: #edfaff;
   background: linear-gradient(to right, #264653, #264653, #3496bd);
   border-radius: 0 15px;
-  font-family: Lora, serif;
+  font-family: Lora;
   font-size: 18px;
   text-align: center;
 }
 
 .main-desktop section div p {
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 14px;
   margin: 5px;
   padding: 15px;
@@ -397,7 +388,7 @@ figcaption {
 }
 
 .main-desktop ul {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 12px;
   text-align: left;
   list-style: none;
@@ -405,7 +396,7 @@ figcaption {
 }
 
 .main-desktop p {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 12px;
   color: #beedff;
   margin: 3px 5%;
@@ -531,7 +522,7 @@ figcaption {
 }
 @media (max-width: 435px) {
   .item {
-    height: 300px;
+    height: 330px;
   }
 }
 /* Reseteo */

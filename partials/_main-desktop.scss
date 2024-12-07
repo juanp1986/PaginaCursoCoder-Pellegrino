@@ -1,3 +1,5 @@
+@import "./mixin";
+
 /* Media query para el Main Desktop (pantallas grandes) */
   
 @media (min-width: 768px) {
@@ -10,45 +12,41 @@
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
     width: 95%;
-    height: 300px;
+    height: 350px;
     border-radius: 0 25px 0 0;  
   }
   .imagen-desktop {
     grid-column: 1/2;
-    width: 100%;
-    height: 100%;
+    @extend .img-full;
     border-radius: 0; 
     border: 2px solid $color1;
     border-right: none;
     overflow: hidden;
   }
   .fondo-img-desktop {
-    width: 100%;
-    height: 100%;
+    @extend .img-full;
   }
   .descripcion-desktop {
     align-content: center;
     grid-column: 2/3;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to bottom,#edfaff,#beedff,#a0e4ff);
-    border: 2px solid  $color1;
+    @include gradiente(to bottom,$color1,$color2,$color3);
+    border:2px solid $color1;
     border-radius: 0 25px 0 0;
   }
   .descripcion-h4-desktop {  
     margin: 5px;
     padding: 10px 20px;
     color: $color1;
-    background: linear-gradient(to right,#264653,#264653,#3496bd);
+    @include gradiente(to right,$color6,$color6,$color5);
     border-radius: 0 15px; 
-    font-family: Lora, serif;
-    font-size: 18px;
+    @include fuente (Lora,18px);
     text-align: center;
   }
   .main-desktop section div p {
     text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    @include fuente (Poppins,14px);
     margin: 5px;
     padding: 15px;
     color: $color7;
@@ -66,19 +64,17 @@
     text-align: center;
   }
   .main-desktop h1,h2,h3 {
-    color: white;
+    color: $color0;
     font-family: "Dancing Script", cursive;
   }
   .main-desktop ul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    @include fuente (Poppins,12px);
     text-align: left;
     list-style: none;
-    color: #beedff;
+    color: $color2;
   }
   .main-desktop p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    color: #beedff;
+    @include fuente (Poppins,12px);
+    color: $color2;
     margin: 3px 5%;
   }
