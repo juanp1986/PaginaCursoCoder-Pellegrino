@@ -23,13 +23,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- animaciones -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 
 <body>
 
-<!-- Navbar para mobile -->
+  <header>
+  
+    <!-- Navbar para mobile -->
 
-    <header>
       <nav class="navbar navbar-mobile">
         <div class="container-fluid bgc-navbar">
           <a class="navbar-brand navbar-logo-mobile" href="index.html">
@@ -68,133 +73,153 @@
           </div>
         </div>
       </nav>
-    </header>
 
-<!-- Navbar para desktop -->
+    <!-- Navbar para desktop -->
 
-    <header>
       <nav class="navbar navbar-desktop">
-        <form class="container-fluid justify-content-center">
-           <div class="boton"><a href="index.html">Home</a></div>
-           <div class="boton"><a href="html/velas.html">Velas</a></div>
-           <div class="boton"><a href="html/sahumerios.html">Sahumerios</a></div>
-           <div class="navbar-logo"><a href="index.html"><img src="images/almacen-de-aromas.png" alt="Logo de Almacen de Aromas" width="80" height="80"></a></div>
-           <div class="boton"><a href="html/aromatizadores.html">Aromatizadores</a></div>
-           <div class="boton"><a href="html/difusores.html">Difusores</a></div>
-           <div class="boton"><a href="html/esencias.html">Esencias</a></div>
-        </form>
+      <ul class="container-fluid justify-content-center ul-navbar">
+         <li class="boton"><a href="index.html">Home</a></li>
+         <li class="boton"><a href="html/velas.html">Velas</a></li>
+         <li class="boton"><a href="html/sahumerios.html">Sahumerios</a></li>
+         <li class="navbar-logo"><a href="index.html"><img src="images/almacen-de-aromas.png" alt="Logo de Almacen de Aromas" width="70" height="70"></a></li>
+         <li class="boton"><a href="html/aromatizadores.html">Aromatizadores</a></li>
+         <li class="boton"><a href="html/difusores.html">Difusores</a></li>
+         <li class="boton"><a href="html/esencias.html">Esencias</a></li>
+      </ul>
       </nav>
-    </header>
+
+  </header>
 
 <!-- main para mobile -->
 
-    <main class="main-mobile">
+  <main class="main-mobile">
 
   <section class="titulo-principal">
-     <h1>Transforma tu espacio, eleva tu bienestar:</h1>
-     <p>Descubre el poder de la aromaterapia con nuestra exquisita selección de difusores, velas e inciensos. 
-     <br>Estos productos no solo embellecen tu hogar, sino que también ofrecen una experiencia sensorial única que promueve el bienestar y la tranquilidad.</p>
-  <section>
+    <h1>Transforma tu espacio, eleva tu bienestar:</h1>
+    <p>Descubre el poder de la aromaterapia con nuestra exquisita selección de difusores, velas e inciensos. 
+    <br>Estos productos no solo embellecen tu hogar, sino que también ofrecen una experiencia sensorial única que promueve el bienestar y la tranquilidad.</p>
+  </section>
   
   
   <section class="grilla">
     <div class="item">
-      <div class="imagen" style="background-image: url(./images/vela.jpeg);"></div>
+      <div class="imagen">
+        <img src="./images/vela.jpeg" alt="Imagen de una Vela" class="fondo-img">
+      </div>
       <div class="descripcion">
-        <span class="descripcion-span">Velas: Luz y aromas que inspiran</span>
+        <h4 class="descripcion-h4">Velas: Luz y aromas que inspiran</h4>
       </div>
     </div>
     <div class="item">
-      <div class="imagen" style="background-image: url(./images/incienso-aromatico.jpg);"></div>
+      <div class="imagen">
+        <img src="./images/incienso-aromatico.jpg" alt="Foto de un incienso" class="fondo-img">
+      </div>
       <div class="descripcion">
-        <span class="descripcion-span">Inciensos: Conexion y Equilibrio</span>
+        <h4 class="descripcion-h4">Inciensos: Conexion y Equilibrio</h4>
       </div>
     </div>
     <div class="item">
-      <div class="imagen" style="background-image: url(./images/aromatizador.webp);"></div>
+      <div class="imagen">
+        <img src="./images/aromatizador.webp" alt="Foto de aromatizadores" class="fondo-img">
+      </div>
       <div class="descripcion">
-        <span class="descripcion-span">Aromatizadores: Frescura Instantanea</span>
+        <h4 class="descripcion-h4">Aromatizadores: Frescura Instantanea</h4>
       </div>
     </div>
     <div class="item">
-      <div class="imagen" style="background-image: url(./images/difusores.jpg);"></div>
+      <div class="imagen">
+        <img src="./images/difusores.jpg" alt="Foto de difusores" class="fondo-img">
+      </div>
       <div class="descripcion">
-        <span class="descripcion-span">Difusores: Respira y Relajate</span>
+        <h4 class="descripcion-h4">Difusores: Respira y Relajate</h4>
       </div>
     </div>
     <div class="item">
-      <div class="imagen" style="background-image: url(./images/esencias.jpg);"></div>
+      <div class="imagen">
+        <img src="./images/esencias.jpg" alt="Foto de hornillo" class="fondo-img">
+      </div>
       <div class="descripcion">
-        <span class="descripcion-span">Esencias: Elixir de Bienestar</span>
+        <h4 class="descripcion-h4">Esencias: Elixir de Bienestar</h4>
       </div>
     </div>
   </section>
   
   <section>
       <h2>Beneficios Comprobados para Tu Bienestar</h2>
-      <ul>
+        <ul>
           <li><span class="items-de-lista-principal">Reducción del estrés y la ansiedad:</span> La aromaterapia puede ayudar a calmar la mente y reducir la tensión emocional, promoviendo una sensación de bienestar.</li>
           <li><span class="items-de-lista-principal">Mejora del sueño:</span> Utilizar aromas específicos puede favorecer un ambiente propicio para un sueño más reparador y profundo.</li>
           <li><span class="items-de-lista-principal">Aumento de la Concentración:</span> Algunas fragancias estimulan la mente, mejorando el enfoque y la productividad.</li>
           <li><span class="items-de-lista-principal">Mejora del estado de ánimo:</span> La aromaterapia puede influir positivamente en las emociones, ayudando a combatir la tristeza y promover la felicidad.</li>
           <li><span class="items-de-lista-principal">Estimulación del sistema inmunológico:</span> Algunos aromas tienen propiedades que pueden ayudar a fortalecer las defensas del organismo.</li>
-      </ul>
+        </ul>
       <h3>Crea Tu Oasis Personal:</h3>
       <p class="ultimo-parrafo-main">Invierte en tu bienestar y transforma tu hogar en un refugio de calma y felicidad. Ya sea que elijas un difusor , una vela aromática o inciensos exóticos, cada uno de nuestros productos está diseñado para ayudarte a alcanzar un estado de armonía y paz.</p>
   </section>
   
-    </main>
+  </main>
 
 <!-- main para desktop -->
 
-    <main class="main-desktop">
-
-<section class="titulo-principal">
-   <h1>Transforma tu espacio, eleva tu bienestar:</h1>
-   <p>Descubre el poder de la aromaterapia con nuestra exquisita selección de difusores, velas e inciensos. 
-   <br>Estos productos no solo embellecen tu hogar, sino que también ofrecen una experiencia sensorial única que promueve el bienestar y la tranquilidad.</p>
-<section>
+  <main class="main-desktop">
 
 
-<section class="grilla">
-  <div class="item">
-    <div class="imagen" style="background-image: url(./images/vela.jpeg);"></div>
-    <div class="descripcion">
-      <span class="descripcion-span">Velas: Luz y aromas que inspiran</span>
+  <section class="titulo-principal">
+    <h1 class="animate__animated animate__rubberBand">Transforma tu espacio, eleva tu bienestar:</h1>
+    <p>Descubre el poder de la aromaterapia con nuestra exquisita selección de difusores, velas e inciensos. 
+    <br>Estos productos no solo embellecen tu hogar, sino que también ofrecen una experiencia sensorial única que promueve el bienestar y la tranquilidad.</p>
+  </section>
+
+
+  <section class="grilla">
+  <div class="item-desktop">
+    <div class="imagen-desktop">
+      <img src="./images/vela.jpeg" alt="Imagen de una Vela encendida" class="fondo-img-desktop">
+    </div>
+    <div class="descripcion-desktop">
+      <h4 class="descripcion-h4-desktop">Velas: Luz y aromas que inspiran</h4>
       <p class="texto-descripcion">Las velas no solo aportan una cálida luminosidad, sino que también liberan aromas envolventes que transforman cualquier habitación. Invitan a la relajación y fomentan un ambiente acogedor. Perfectas para tus momentos de autocuidado, las velas son el aliado ideal para crear una atmósfera de serenidad en tu hogar.</p>
     </div>
   </div>
-  <div class="item">
-    <div class="imagen" style="background-image: url(./images/incienso-aromatico.jpg);"></div>
-    <div class="descripcion">
-      <span class="descripcion-span">Inciensos: Conexion y Equilibrio</span>
+  <div class="item-desktop">
+    <div class="imagen-desktop">
+      <img src="./images/incienso-aromatico.jpg" alt="Foto de incienso" class="fondo-img-desktop">
+    </div>
+    <div class="descripcion-desktop">
+      <h4 class="descripcion-h4-desktop">Inciensos: Conexion y Equilibrio</h4>
       <p class="texto-descripcion">El uso de inciensos ha sido parte de rituales ancestrales en muchas culturas. Sus fragancias ayudan a equilibrar el cuerpo y la mente, facilitando la meditación y la concentración. Al encender un incienso, no solo aromatizas el espacio, sino que también invocas una sensación de paz interior y conexión con lo espiritual.</p>
     </div>
   </div>
-  <div class="item">
-    <div class="imagen" style="background-image: url(./images/aromatizador.webp);"></div>
-    <div class="descripcion">
-      <span class="descripcion-span">Aromatizadores: Frescura Instantanea</span>
+  <div class="item-desktop">
+    <div class="imagen-desktop">
+      <img src="./images/aromatizador.webp" alt="Foto de Aromatizadores"class="fondo-img-desktop">
+    </div>
+    <div class="descripcion-desktop">
+      <h4 class="descripcion-h4-desktop">Aromatizadores: Frescura Instantanea</h4>
       <p class="texto-descripcion">Renueva tus espacios con nuestros aromatizadores textiles y de ambiente. Diseñados para ofrecer una explosión de frescura en cualquier lugar, son perfectos para ropa, sofás o cualquier superficie que necesite un toque de fragancia. Con su aplicación sencilla, transforman el ambiente al instante, creando una atmósfera acogedora y placentera.</p>
     </div>
   </div>
-  <div class="item">
-    <div class="imagen" style="background-image: url(./images/difusores.jpg);"></div>
-    <div class="descripcion">
-      <span class="descripcion-span">Difusores: Respira y Relajate</span>
+  <div class="item-desktop">
+    <div class="imagen-desktop">
+      <img src="./images/difusores.jpg" alt="Foto de Difusores"class="fondo-img-desktop">
+    </div>
+    <div class="descripcion-desktop">
+      <h4 class="descripcion-h4-desktop">Difusores: Respira y Relajate</h4>
       <p class="texto-descripcion">Nuestros difusores son perfectos para llenar tu espacio con fragancias naturales que calman la mente y revitalizan el espíritu. Al dispersar aceites esenciales, crean un ambiente propicio para la meditación, el estudio o simplemente para disfrutar de un momento de paz.</p>
     </div>
   </div>
-  <div class="item">
-    <div class="imagen" style="background-image: url(./images/esencias.jpg);"></div>
-    <div class="descripcion">
-      <span class="descripcion-span">Esencias: Elixir de Bienestar</span>
+  <div class="item-desktop">
+    <div class="imagen-desktop">
+      <img src="./images/esencias.jpg" alt="Foto de hornillo" class="fondo-img-desktop">
+    </div>
+    <div class="descripcion-desktop">
+      <h4 class="descripcion-h4-desktop">Esencias: Elixir de Bienestar</h4>
       <p class="texto-descripcion">Nuestros aceites esenciales son la esencia pura de la naturaleza. Cada gota está repleta de beneficios, desde la mejora del ánimo hasta la reducción de la ansiedad. Ya sea que elijas el delicado aroma de gardenias para evocar recuerdos de primavera o la calidez envolvente de la vainilla para crear un ambiente acogedor, estos potentes concentrados son ideales para la aromaterapia y el cuidado personal.</p>
     </div>
   </div>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Beneficios Comprobados para Tu Bienestar</h2>
     <ul>
         <li><span class="items-de-lista-principal">Reducción del estrés y la ansiedad:</span> La aromaterapia puede ayudar a calmar la mente y reducir la tensión emocional, promoviendo una sensación de bienestar.</li>
@@ -205,19 +230,19 @@
     </ul>
     <h3>Crea Tu Oasis Personal:</h3>
     <p class="ultimo-parrafo-main">Invierte en tu bienestar y transforma tu hogar en un refugio de calma y felicidad. Ya sea que elijas un difusor , una vela aromática o inciensos exóticos, cada uno de nuestros productos está diseñado para ayudarte a alcanzar un estado de armonía y paz.</p>
-</section>
+  </section>
 
-    </main>
+  </main>
 
 <!-- Footer -->
 
     <footer class="navbar footer">
-      <form class="container-fluid justify-content-end">
-        <div class="navbar-logo"><a href="index.html"><img src="images/almacen-de-aromas.png" alt="Logo de Almacen de Aromas" width="50" height="50"></a></div>
-        <div class="boton"><a href="https://www.instagram.com/almacen.de.aromas.tsas/" target="_blank">Instagram</div>
-        <div class="boton"><a href="https://www.facebook.com/profile.php?id=61567848955741" target="_blank">Facebook</a></div>
-        <div class="boton"><a href="mailto:almacen.de.aromas.tsas@gmail.com">Mail</a></div>
-      </form>
+      <ul class="container-fluid justify-content-end">
+        <li class="navbar-logo"><a href="index.html"><img src="images/almacen-de-aromas.png" alt="Logo de Almacen de Aromas" width="50" height="50"></a></li>
+        <li class="boton"><a href="https://www.instagram.com/almacen.de.aromas.tsas/" target="_blank">Instagram</li>
+        <li class="boton"><a href="https://www.facebook.com/profile.php?id=61567848955741" target="_blank">Facebook</a></li>
+        <li class="boton"><a href="mailto:almacen.de.aromas.tsas@gmail.com">Mail</a></li>
+      </ul>
     </footer>
 
 <!-- Link de bootstrap -->

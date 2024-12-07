@@ -1,0 +1,80 @@
+@import "./mixin";
+
+/* Media query para el Main Desktop (pantallas grandes) */
+  
+@media (min-width: 768px) {
+  
+    /* Ahora es una grilla con 5 columnas: 2 para la imagen y 3 para la descripcion (Horizontal) */
+  
+  }
+  .item-desktop {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    height: 350px;
+    border-radius: 0 25px 0 0;  
+  }
+  .imagen-desktop {
+    grid-column: 1/2;
+    @extend .img-full;
+    border-radius: 0; 
+    border: 2px solid $color1;
+    border-right: none;
+    overflow: hidden;
+  }
+  .fondo-img-desktop {
+    @extend .img-full;
+  }
+  .descripcion-desktop {
+    align-content: center;
+    grid-column: 2/3;
+    width: 100%;
+    padding: 20px;
+    @include gradiente(to bottom,$color1,$color2,$color3);
+    border:2px solid $color1;
+    border-radius: 0 25px 0 0;
+  }
+  .descripcion-h4-desktop {  
+    margin: 5px;
+    padding: 10px 20px;
+    color: $color1;
+    @include gradiente(to right,$color6,$color6,$color5);
+    border-radius: 0 15px; 
+    @include fuente (Lora,18px);
+    text-align: center;
+  }
+  .main-desktop section div p {
+    text-align: left;
+    @include fuente (Poppins,14px);
+    margin: 5px;
+    padding: 15px;
+    color: $color7;
+  }
+  .main-desktop h1 {
+    margin: 5px;
+    font-size: 34px;
+  }
+  .main-desktop h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .main-desktop h3{
+    font-size: 24px;
+    text-align: center;
+  }
+  .main-desktop h1,h2,h3 {
+    color: $color0;
+    font-family: "Dancing Script", cursive;
+  }
+  .main-desktop ul {
+    @include fuente (Poppins,12px);
+    text-align: left;
+    list-style: none;
+    color: $color2;
+  }
+  .main-desktop p {
+    @include fuente (Poppins,12px);
+    color: $color2;
+    margin: 3px 5%;
+  }

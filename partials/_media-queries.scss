@@ -1,0 +1,104 @@
+
+
+  /* Media Query para las galerias */
+
+    /* a partir de 550px y hasta 767px la grilla tiene dos columnas */
+
+    @media (min-width: 550px) and (max-width:767px){
+        .galeria ul {
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+        .boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:90px;
+            margin: 2px;
+        }
+        a:visited, a:link {
+            font-size: 10px;
+        }
+        .item {
+          width: 90%;
+        }
+      }
+      
+          /* a partir de 768px la grilla tiene 4 columnas  */
+      
+      @media (min-width: 768px) {
+        .galeria ul {
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+        }
+      }
+
+/* Media Query para Desktop (pantallas grandes) */
+  
+    /* Despues de los 767px el display solo muestra el navbar y el main para Desktop */
+  
+       @media (min-width: 768px) {
+      
+           .navbar-mobile {
+               display: none;
+      }
+  
+           .navbar-desktop {
+               display: flex;
+      }
+  
+           .main-mobile {
+               display: none;
+      }
+  
+           .main-desktop {
+               display: grid;
+      }
+           .footer {
+               font-size: 16px;
+      }
+  }
+  
+  
+/* Media Query para dispositivos móviles (pantallas pequeñas) */
+  
+    /* Hasta los 767px el Display solo muestra el Navbar y el Main para Mobile */
+  
+      @media (max-width: 767px) {
+  
+        .navbar-mobile {
+           display: block;
+      }
+  
+        .navbar-desktop {
+           display: none;
+      }
+      
+        .main-mobile {
+           display: block;
+      }
+  
+        .main-desktop {
+           display: none;
+      }
+}
+
+  // para el boton del footer en mobile
+      @media (max-width: 550px) {
+        .boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:70px;
+            margin:1px;
+      }  
+}
+
+// para las imagenes del main mobile
+
+@media (max-width:435px){
+  .item {
+    height: 330px;
+  }
+}
+
