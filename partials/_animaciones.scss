@@ -1,0 +1,18 @@
+@keyframes myanimation {
+    0%{ rotate: 360deg;}
+    0%{ transform: scale(0.4);}
+    100%{ transform: scale(1.2);}
+    0%,100%{ background: linear-gradient(to bottom,#264653,#264653,#3496bd,#92e0ff);}
+    0%,100%{ box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.5);}
+  }
+  
+@keyframes myanimation2 {
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    90%{transform: rotate(340deg);}     
+  }
+  
+.animate__animated.animate__rubberBand {
+    --animate-duration: 2s;
+  }

@@ -1,19 +1,11 @@
 .navbar-desktop {
     padding: 5px; 
-    background-color: #13232A;
+    background: linear-gradient(to top,$color7,$color7,$color5);
 }
 .navbar-logo {
     border-radius: $radius-circulo;
     animation: myanimation 2.2s linear;
 }
-
-@keyframes myanimation {
-    0%{ rotate: 360deg;}
-    0%{ transform: scale(0.4);}
-    100%{ transform: scale(1.2);}
-    0%,100%{ background: linear-gradient(to bottom,#264653,#264653,#3496bd,#92e0ff);}
-    0%,100%{ box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.5);}
-  }
     
 .navbar-logo:hover {
     background: linear-gradient(to bottom,#92e0ff,#3496bd);

@@ -1,5 +1,5 @@
 .navbar-mobile, .navbar-mobile div {
-    background-color: #13232A;
+    background: linear-gradient(to top,$color7,$color7,$color5);
 }  
 .navbar-logo-mobile:hover{
     background: linear-gradient(to top,#264653,#3496bd,#92e0ff);
@@ -13,7 +13,7 @@
     background: #3496bd;
 }
 .boton-menu-hamburguesa {
-    background: linear-gradient(to top,#264653,#264653,#3496bd,#92e0ff);
+    background: linear-gradient(to top,#264653,#3496bd,#92e0ff);
     @extend .border;
     padding: 10px;
     margin-right: 15px;
