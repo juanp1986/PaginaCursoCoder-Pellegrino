@@ -73,7 +73,7 @@
 }
 
 .boton-menu-hamburguesa {
-  background: linear-gradient(to top, #a0e4ff, #3496bd, #13232A);
+  background: linear-gradient(to top, #a0e4ff, #3496bd, #264653);
   padding: 10px;
   margin-right: 15px;
 }
@@ -183,7 +183,7 @@ figcaption {
   font-family: Poppins;
   font-size: 18px;
   font-weight: bold;
-  background: radial-gradient(#a0e4ff, #92e0ff, #3496bd);
+  background: radial-gradient(#beedff, #92e0ff, #3496bd);
   border: 1px solid #3496bd;
   color: #264653;
   border-radius: 50%;

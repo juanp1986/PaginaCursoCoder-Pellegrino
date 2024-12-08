@@ -65,7 +65,7 @@ figcaption {
   .boton2 {
     @include fuente (Poppins,18px);
     font-weight: bold;
-    background: radial-gradient($color3,$color4,$color5);
+    background: radial-gradient($color2,$color4,$color5);
     border: 1px solid $color5;
     color: $color6;
     border-radius: $radius-circulo;
