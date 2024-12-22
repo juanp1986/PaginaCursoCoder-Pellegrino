@@ -11,16 +11,19 @@
 .navbar-logo-mobile:active {
     @extend .border;
 }
+
 .boton-menu-hamburguesa {
-    @include gradiente(to top,$color3,$color5,$color7);
+    @include gradiente(to top,$color3,$color5,$color6);
     @extend .border;
     padding: 10px;
     margin-right: 15px;
-}
-.boton-menu-hamburguesa:hover {
+
+    &:hover {
     transform: translateY(2px);
     box-shadow: 8px 8px 8px rgba(124, 208, 231, 0.5);
-}     
+    }
+}
+
 .cruz-navbar-mobile {
     background-color: $color0;
 }
@@ -35,12 +38,12 @@ h5 {
 .nav-link-mobile {
     padding-left: 10px;
     border-radius: 10px;
-}
     
-.nav-link-mobile:hover {
+    &:hover {
     color: $color4;
     @extend .border;
     @include gradiente(to right,$color7,$color5,$color3);
     box-shadow: 4px 4px 12px rgba(124, 208, 231, 0.5);
     transform: translatey(-2px);
-}
+    }
+}  
