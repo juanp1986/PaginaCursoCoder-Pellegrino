@@ -21,13 +21,11 @@
   border-radius: 50%;
   animation: myanimation 2s linear;
 }
-
 .navbar-logo:hover {
   background: linear-gradient(to top, #13232A, #3496bd, #a0e4ff);
   transform: rotate(-4deg);
   box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.2);
 }
-
 .navbar-logo:active {
   background: #3496bd;
 }
@@ -49,14 +47,12 @@
   color: #edfaff;
   text-align: center;
 }
-
 .boton:hover {
   background: linear-gradient(to top, #13232A, #264653, #3496bd);
   transform: translateY(4px);
   border: 1px solid #edfaff;
   text-decoration: underline;
 }
-
 .boton:active {
   background: #3496bd;
 }
@@ -77,7 +73,6 @@
   padding: 10px;
   margin-right: 15px;
 }
-
 .boton-menu-hamburguesa:hover {
   transform: translateY(2px);
   box-shadow: 8px 8px 8px rgba(124, 208, 231, 0.5);
@@ -99,7 +94,6 @@ h5 {
   padding-left: 10px;
   border-radius: 10px;
 }
-
 .nav-link-mobile:hover {
   color: #92e0ff;
   background: linear-gradient(to right, #13232A, #3496bd, #a0e4ff);
@@ -111,7 +105,6 @@ h5 {
   margin: 0;
   padding: 0;
 }
-
 .galeria ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -124,7 +117,6 @@ h5 {
   border-radius: 8px;
   overflow: hidden;
 }
-
 .galeria li:hover {
   transform: scale(1.05);
   box-shadow: 2px 2px 8px rgba(124, 208, 231, 0.7);
@@ -199,7 +191,6 @@ figcaption {
   border: 1px solid #3496bd;
   color: #edfaff;
 }
-
 .btn-color:hover {
   border: 1px solid #edfaff;
   color: #edfaff;
@@ -289,24 +280,20 @@ figcaption {
   margin: 4px;
   padding: 4px;
 }
-
 .main-mobile h2, .main-mobile h3 {
   font-size: 18px;
   text-align: center;
 }
-
-.main-mobile h1, h2, h3 {
+.main-mobile h1, .main-mobile h2, .main-mobile h3 {
   color: white;
   font-family: "Dancing Script", cursive;
 }
-
 .main-mobile p {
   font-family: Poppins;
   font-size: 10px;
   color: #beedff;
   margin: 2px 5%;
 }
-
 .main-mobile ul {
   font-family: Poppins;
   font-size: 10px;
@@ -371,22 +358,18 @@ figcaption {
   margin: 5px;
   font-size: 34px;
 }
-
 .main-desktop h2 {
   font-size: 24px;
   text-align: center;
 }
-
 .main-desktop h3 {
   font-size: 24px;
   text-align: center;
 }
-
-.main-desktop h1, h2, h3 {
+.main-desktop h1, .main-desktop h2, .main-desktop h3 {
   color: white;
   font-family: "Dancing Script", cursive;
 }
-
 .main-desktop ul {
   font-family: Poppins;
   font-size: 12px;
@@ -394,7 +377,6 @@ figcaption {
   list-style: none;
   color: #beedff;
 }
-
 .main-desktop p {
   font-family: Poppins;
   font-size: 12px;
@@ -408,7 +390,6 @@ figcaption {
   padding: 0;
   font-size: 10px;
 }
-
 .footer ul {
   background-color: #13232A;
 }

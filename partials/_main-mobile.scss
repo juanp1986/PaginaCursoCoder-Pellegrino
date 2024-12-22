@@ -56,30 +56,34 @@
     text-decoration: underline;
     color: $color0;
   }
-  .main-mobile h1 {
-    font-size: 20px;
-    margin: 4px;
-    padding: 4px;
-  }
-  .main-mobile h2, .main-mobile h3 {
-    font-size: 18px;
-    text-align: center;
-  }
   
-  .main-mobile h1, h2, h3 {
-    color: $color0;
-    font-family: "Dancing Script", cursive;
-  }
+  .main-mobile {
+
+    h1 {
+      font-size: 20px;
+      margin: 4px;
+      padding: 4px;
+    }
+    h2, h3 {
+      font-size: 18px;
+      text-align: center;
+    }
   
-  .main-mobile p {
-    @include fuente (Poppins,10px);
-    color: $color2;
-    margin: 2px 5%;
-  }
-  .main-mobile ul {
-    @include fuente (Poppins,10px);
-    margin-right: 5%;
-    text-align: left;
-    list-style: none;
-    color: $color2;
-  }
+    h1, h2, h3 {
+      color: $color0;
+      font-family: "Dancing Script", cursive;
+    } 
+  
+    p {
+      @include fuente (Poppins,10px);
+      color: $color2;
+      margin: 2px 5%;
+    }
+    ul {
+      @include fuente (Poppins,10px);
+      margin-right: 5%;
+      text-align: left;
+      list-style: none;
+      color: $color2;
+    }
+  }  

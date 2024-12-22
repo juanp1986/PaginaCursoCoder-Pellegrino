@@ -4,21 +4,22 @@
     padding: 5px; 
     @include gradiente(to top,$color7,$color7,$color5);
 }
+
 .navbar-logo {
     border-radius: $radius-circulo;
     animation: myanimation 2s linear;
-}
-    
-.navbar-logo:hover {
+
+    &:hover {
     @include gradiente(to top,$color7,$color5,$color3);
     transform: rotate(-4deg);
     box-shadow: 5px 5px 20px rgba(124, 208, 231, 0.2);
-}
+    }
     
-.navbar-logo:active {
+    &:active {
     background: $color5;
-    @extend .border;
-}
+    @extend .border; 
+    }
+}   
       
 .ul-navbar {
     list-style-type: none;
@@ -37,16 +38,16 @@
     transition: transform 0.1s ease;
     color: $color1;
     text-align: center;
-}
-      
-.boton:hover {
+
+    &:hover {
     @include gradiente(to top,$color7,$color6,$color5);
     transform:translateY(4px);
     border:1px solid #edfaff;
     text-decoration: underline;
-}
+    }
 
-.boton:active {
+    &:active {
     background: $color5;
-    @extend .border;
+    @extend .border; 
+    }
 }

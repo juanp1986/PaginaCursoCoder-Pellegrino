@@ -51,30 +51,34 @@
     padding: 15px;
     color: $color7;
   }
-  .main-desktop h1 {
+  
+  .main-desktop {
+
+    h1 {
     margin: 5px;
     font-size: 34px;
   }
-  .main-desktop h2 {
+    h2 {
     font-size: 24px;
     text-align: center;
   }
-  .main-desktop h3{
+    h3{
     font-size: 24px;
     text-align: center;
   }
-  .main-desktop h1,h2,h3 {
+    h1,h2,h3 {
     color: $color0;
     font-family: "Dancing Script", cursive;
   }
-  .main-desktop ul {
+    ul {
     @include fuente (Poppins,12px);
     text-align: left;
     list-style: none;
     color: $color2;
   }
-  .main-desktop p {
+    p {
     @include fuente (Poppins,12px);
     color: $color2;
     margin: 3px 5%;
   }
+}
