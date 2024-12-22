@@ -1,100 +1,103 @@
 .galeria {
-    margin: 0;
-    padding: 0;
-}
-.galeria ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    list-style-type: none;
-    padding: 5px;
-    gap: 15px;
-}
+  margin: 0;
+  padding: 0;
+
+  ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  padding: 5px;
+  gap: 15px;
+  }
+}    
 .galeria li {
-    @extend .border2;
-    border-radius: 8px;
-    overflow: hidden;
-}
-.galeria li:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 2px 8px rgba(124, 208, 231, 0.7);
-}
+  @extend .border2;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px rgba(124, 208, 231, 0.7);
+  }
+}  
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
       
 figcaption {
-    padding: 5px;
-    @include gradiente(to top,$color5,$color5,$color6);
-    color: $color1;
-    @include fuente (Roboto Condensed,16px);
-    text-align: center;
+  padding: 5px;
+  @include gradiente(to top,$color5,$color5,$color6);
+  color: $color1;
+  @include fuente (Roboto Condensed,16px);
+  text-align: center;
 }
 .galeria ul li figure img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .titulo-de-galerias {
-    grid-column: 1/5 ;
-    @include gradiente(to right,$color7,$color6,$color5);
-    @include fuente (Roboto Condensed,22px);
-    margin: 10px;
-    padding: 10px;
-    @extend .border2;
-    color: $color1;
-    border-radius: 15px 0 15px 0;
+  grid-column: 1/5 ;
+  @include gradiente(to right,$color7,$color6,$color5);
+  @include fuente (Roboto Condensed,22px);
+  margin: 10px;
+  padding: 10px;
+  @extend .border2;
+  color: $color1;
+  border-radius: 15px 0 15px 0;
   }
-  .header-galeria {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    flex-wrap: nowrap;
+.header-galeria {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  flex-wrap: nowrap;
   }
-  .fin-de-header {
-    padding: 0;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 5/6;
-    @include gradiente(to left,$color7,$color6,$color5);
-    border: 1px solid $color5;
-    border-radius: 0 15px ;
+.fin-de-header {
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5/6;
+  @include gradiente(to left,$color7,$color6,$color5);
+  border: 1px solid $color5;
+  border-radius: 0 15px ;
   } 
-  .boton2 {
-    @include fuente (Poppins,18px);
-    font-weight: bold;
-    background: radial-gradient($color3,$color4,$color5);
-    border: 1px solid $color5;
-    color: $color6;
-    border-radius: $radius-circulo;
-    margin: 8px;
-    padding: 5px;
-    min-height: 40px;
-    min-width: 40px;
-    animation: myanimation2 2.2s infinite;
-  }
+.boton2 {
+  @include fuente (Poppins,18px);
+  font-weight: bold;
+  background: radial-gradient($color2,$color4,$color5);
+  border: 1px solid $color5;
+  color: $color6;
+  border-radius: $radius-circulo;
+  margin: 8px;
+  padding: 5px;
+  min-height: 40px;
+  min-width: 40px;
+  animation: myanimation2 2.2s infinite;
+}
 
-  .btn-color {
-    @include gradiente(to right,$color5,$color6,$color6);
-    border:1px solid $color5;
-    color: $color1;
-  }
-  .btn-color:hover {
+.btn-color {
+  @include gradiente(to right,$color5,$color6,$color6);
+  border:1px solid $color5;
+  color: $color1;
+  
+  &:hover {
     border:1px solid $color1;
     color:$color1;
   }
-  .modal-1 {
-    @include gradiente(to right,$color1,$color2,$color2);
-    color: $color5;
-    font-size: bold;
-  }
-  .modal-2 {
-    @include gradiente(to right,$color1,$color2,$color3);
-    color: $color5;
-    font-size: bold;
-  }
-  .modal-3 {
-    @include gradiente(to right,$color1,$color2,$color3);
-  }
+}  
+.modal-1 {
+  @include gradiente(to right,$color1,$color2,$color2);
+  color: $color5;
+  font-size: bold;
+}
+.modal-2 {
+  @include gradiente(to right,$color1,$color2,$color3);
+  color: $color5;
+  font-size: bold;
+}
+.modal-3 {
+  @include gradiente(to right,$color1,$color2,$color3);
+}
